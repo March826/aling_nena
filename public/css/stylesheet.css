@@ -1,0 +1,56 @@
+p{
+  text-indent: 3em;
+  color: #CC0066;
+  font-size:18px;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+body{
+  border: orchid solid 4px;
+  background-color: #FFFF99
+}
+h1, h3, h2{
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    color:#FF0033;
+}
+
+p::first-letter {
+  font-weight: bold;
+  color: #FF0033;
+  font-size:26px;
+}
+#about{
+  float: left;
+  width: 500px;
+  height: 480px;
+  border-radius: 50%;
+  margin-right: 15px;
+
+  shape-outside: circle();
+  shape-margin: 10px;
+}
+footer{
+  background-color: orchid;
+  text-align: center;
+  padding: 1em;
+  font-family: Verdana, Geneva, sans-serif;
+  color:yellow;
+}
+
+#header{
+    background-image: url('header2.png');
+    background-color: orchid;
+    width: 1000px;
+    height: 300px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+#end{
+    font-family: "Brush Script MT", cursive;
+}
+#center{
+    text-align:center;
+}
+span{
+    font-size:24px;
+}
