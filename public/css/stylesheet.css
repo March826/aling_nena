@@ -37,9 +37,8 @@ footer{
 }
 
 #header{
-    background-image: url('header2.png');
-    background-color: orchid;
-    width: 1000px;
+    background-image: url('header.png');
+    width: 800px;
     height: 300px;
     display:block;
     margin-left:auto;
