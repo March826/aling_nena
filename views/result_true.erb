@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="/css/stylesheet.css"/>
+		<title>Aling Nena's Sari-Sari Store</title>
+	</head>		
+		<div id="header"></div>
+		<br />
+		<hr>
+		<a href="/" class="navbar">HOME</a>
+		<a href="/about" class="navbar">ABOUT US</a>
+		<a href="/product" class="navbar">PRODUCT LIST</a>
+		<hr>
+		<br />
+		<h1>Order Details</h1>
+		<br />
+		<h1 style="text-align:center">Congratulations your order was successfully completed!</h1>
+		<h2><%= @product.name %></h2>
+		<img src="/img/result.jpg" id="result" />
+		<p>Amount Due: <%= @cost.to_f %></p>
+		<p>Total Amount Paid: <%= @money.total.to_f %></p>
+		<p>Your change is:</p>
+		 <% @hash.keys.each do |hash| %>
+              <p><%=hash %>: <%= @hash[hash].to_i %></p>
+		<% end %>
+		<img src="/img/phrase_five.png" class="phrase" />
+		<footer><strong>Aling Nena's Sari-Sari Store: A place open to <span>EVERYONE</span> all day and all night!</strong></footer>
+	</body>
+</html>

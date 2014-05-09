@@ -1,14 +1,18 @@
 p{
   text-indent: 3em;
   color: #CC0066;
-  font-size:18px;
+  font-size:20px;
   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  margin-left: 8px;
 }
+
 body{
   border: orchid solid 4px;
-  background-color: #FFFF99
+  background-color: #FFFF99;
 }
-h1, h3, h2{
+
+h1, h3, h2, h4{
+    margin-left: 10px;
     font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
     color:#FF0033;
 }
@@ -16,18 +20,83 @@ h1, h3, h2{
 p::first-letter {
   font-weight: bold;
   color: #FF0033;
-  font-size:26px;
+  font-size:30px;
 }
+
+#basket{
+  float:right;
+  margin-right:15px;
+
+}
+
 #about{
   float: left;
   width: 500px;
   height: 480px;
   border-radius: 50%;
   margin-right: 15px;
+  shape-outside: circle();
+  shape-margin: 12px;
+}
+#product{
+  float: left;
+  width: 500px;
+  height: 480px;
+  border-radius: 50%;
+  margin-right:40px;
+  margin-left:40px;
 
   shape-outside: circle();
-  shape-margin: 10px;
+  shape-margin: 12px;
 }
+#home{
+  float: left;
+  width: 40%;
+  height: 70%;
+  margin-right:40px;
+  margin-left:40px;
+}
+
+#result{
+  float: right;
+  width: 600px;
+  height: 580px;
+  border-radius: 50%;
+  margin-right:40px;
+  margin-left:40px;
+
+  shape-outside: circle();
+  shape-margin: 12px;
+}
+
+#result_false{
+  float: right;
+  width: 400px;
+  height: 380px;
+  border-radius: 50%;
+  margin-right:40px;
+  margin-left:40px;
+
+  shape-outside: circle();
+  shape-margin: 12px;
+}
+
+.phrase{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.btn{
+  width: 150px;
+  height: 50px;
+  margin-left:70px;
+}
+
+.data{
+  border-left:1px solid #FF0033;
+}
+
 footer{
   background-color: orchid;
   text-align: center;
@@ -37,7 +106,7 @@ footer{
 }
 
 #header{
-    background-image: url('header.png');
+    background-image: url('/img/header.png');
     width: 800px;
     height: 300px;
     display:block;
@@ -52,4 +121,53 @@ footer{
 }
 span{
     font-size:24px;
+}
+
+a{
+  color: #CC0066;
+  font-size:18px;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  text-align: center;
+}
+
+.navbar{
+    padding:80px;
+}
+
+hr{
+  color: #CC0066;
+  background-color:#CC0066; 
+  height:6px;
+}
+
+label{
+  color: #CC0066;
+  font-size:20px;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  margin-left: 20px;
+}
+
+table{
+  color: #CC0066;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  text-align:center;
+  border-collapse: collapse;
+  margin: 20px;
+}
+
+td{
+  width:200px;
+}
+thead{
+  font-size:30px;
+  border-bottom:1px solid #FF0033;
+}
+.item{
+  font-size:22px;
+}
+tbody{
+  font-size:22px;
+}
+#button{
+  margin-left: 60px;
 }

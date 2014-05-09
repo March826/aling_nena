@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="/css/stylesheet.css"/>
+		<title>Aling Nena's Sari-Sari Store</title>
+	</head>
+	<body>
+		<div id="header"></div>
+		<br />
+		<hr>
+		<a href="/" class="navbar">HOME</a>
+		<a href="/about" class="navbar">ABOUT US</a>
+		<hr>
+		<br />
+		<h1>PRODUCT LIST</h1>
+    	<img src="/img/phrase_three.png" class="phrase" />
+   	 	<img src="/img/product.jpeg" id="product" />
+        <table>
+          <thead>
+            <tr>
+              <td>Name</td>
+              <td>Price</td>
+            </tr>
+          </thead>
+          <tbody>
+          <% @products.each do |product| %>
+            <tr>
+              <td><a href="/purchase/<%= product.id %>" class="item"><%= product.name %></a></td>
+              <td class="data"><%= product.price %></td>
+            </tr>
+			<% end %>          
+			</tbody>          
+        </table>
+        <img src="/img/phrase_4.png" class="phrase" />
+        <br />
+		<footer><strong>Aling Nena's Sari-Sari Store: A place open to <span>EVERYONE</span> all day and all night!</strong></footer>
+	</body>
+</html>

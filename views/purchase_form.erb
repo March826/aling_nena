@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="/css/stylesheet.css"/>
+		<title>Aling Nena's Sari-Sari Store</title>
+	</head>		
+		<div id="header"></div>
+		<br />
+		<hr>
+		<a href="/" class="navbar">HOME</a>
+		<a href="/about" class="navbar">ABOUT US</a>
+		<a href="/product" class="navbar">PRODUCT LIST</a>
+		<hr>
+		<br />
+		<h1>Order</h3>
+
+		<h2><%= @product.name %></h2>
+		<img src="/img/purchase.png" id="basket" />
+		<h3><%= @product.price %> per item</h3>
+		<h3><%= @product.quantity %> in stock</h3>
+
+		<form method="POST" action="/result/<%= @product.id %>">
+		<label for “name”>Amount to Purchase: </label>
+			<input class = “purchase” type=“text” name="amount" value="0"/>
+
+		<br />
+		<p>Please input the quantity of all the bills you will use all to pay for your purchase</p>
+			<label for “ones”>Ones: </label>
+			<input class = “purchase” type=“text” name="ones" value="0" />
+			<br />
+			<label for “fives”>Fives: </label>
+			<input class = “purchase” type=“text” name="fives" value="0" />
+			<br />
+			<label for “tens”>Tens: </label>
+			<input class = “purchase” type=“text” name="tens" value="0" />
+			<br />
+			<label for “twenties”>Twenties: </label>
+			<input class = “purchase” type=“text” name="twenties" value="0" />
+			<br />
+			<label for “fifties”>Fifties: </label>
+			<input class = “purchase” type=“text” name="fifties" value="0" />
+			<br />
+			<label for “hundreds”>Hundreds: </label>
+			<input class = “purchase” type=“text” name="hundreds" value="0" />
+			<br />
+			<label for “five_hundreds”>Five Hundreds: </label>
+			<input class = “purchase” type=“text” name="five_hundreds" value="0" />
+			<br />
+			<label for “thousands”>Thousands: </label>
+			<input class = “purchase” type=“text” name="thousands" value="0" />
+			<hr>
+			<input type="image" src="/img/order_btn.png" alt="Submit" width="150" height="50" id="button" />
+		</form>
+		<footer><strong>Aling Nena's Sari-Sari Store: A place open to <span>EVERYONE</span> all day and all night!</strong></footer>
+	</body>
+</html>

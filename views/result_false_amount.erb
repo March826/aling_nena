@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="/css/stylesheet.css"/>
+		<title>Aling Nena's Sari-Sari Store</title>
+	</head>		
+		<div id="header"></div>
+		<br />
+		<hr>
+		<a href="/" class="navbar">HOME</a>
+		<a href="/about" class="navbar">ABOUT US</a>
+		<a href="/product" class="navbar">PRODUCT LIST</a>
+		<hr>
+		<br />
+		<h1>Order Details</h3>
+		<img src="/img/result.jpg" id="result_false" />
+		<h2>Sorry your order was not completed!</h2>
+		<h3>The amount of items you entered was insufficient.</h3>
+		<h2>Please Enter a Valid Amount!</h2>
+		<p>To re-order please click the order button below.</p>
+		<a href="/purchase/<%= @product.id %>"><img src="/img/order_btn.png" class ="btn" /></a>
+		<img src="/img/phrase_six.png" class="phrase" />
+		<footer><strong>Aling Nena's Sari-Sari Store: A place open to <span>EVERYONE</span> all day and all night!</strong></footer>
+	</body>
+</html>
